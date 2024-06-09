@@ -9,13 +9,10 @@
      if (!isset($_SESSION['username'])) {
          
          
-    include ('login/login.php');
+    include ('login/index.php');
     
     
 } else if (isset($_SESSION['username'])) { 
-
- $page = 1;
- include 'header.php';
  
  ?>
  
@@ -252,3 +249,7 @@
     <!-- End custom js for this page-->
   </body>
 </html>
+
+<?php
+    } }}
+?>

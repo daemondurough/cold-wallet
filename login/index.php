@@ -1,5 +1,5 @@
-<?php include ('login-action.php');
-
+<?php 
+    include ('login-action.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,16 +30,31 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/img-01.png" alt="IMG">
+					<img src="login/images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="POST" action="">
 					<span class="login100-form-title">
 						Member Login
 					</span>
 
+                    <script language="javascript">
+                        function checkform() {
+                        if (document.mainform.username.value=='') {
+                            alert("Please type your username!");
+                            document.mainform.username.focus();
+                            return false;
+                        }
+                        if (document.mainform.password.value=='') {
+                            alert("Please type your password!");
+                            document.mainform.password.focus();
+                            return false;
+                        }
+                        return true;
+                        }
+                    </script>
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100" type="text" name="username" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -47,7 +62,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="password" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -55,9 +70,11 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+                        <input type="submit" value="Login" class="login100-form-btn" name="login">
+						<!--<button class="login100-form-btn">
 							Login
-						</button>
+						</button>-->
+                        <p style="color:red;"><?php echo $error ?></p>
 					</div>
 
 					<div class="text-center p-t-12">
