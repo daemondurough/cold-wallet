@@ -1,3 +1,3 @@
 <?php
-$mysqli = new mysqli('localhost', 'coinfada_user', 'CoinfadA123.', 'coinfada_dash');
+$mysqli = new mysqli('localhost', 'voltaescrow_user', 'VoltaescroW123.', 'voltaescrow_cold_wallet');
 ?>

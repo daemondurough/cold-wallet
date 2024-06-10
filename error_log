@@ -1,0 +1,17 @@
+[10-Jun-2024 03:30:57 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_close(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/voltaescrow/public_html/login-action.php:64
+Stack trace:
+#0 /home/voltaescrow/public_html/login-action.php(64): mysqli_close(true)
+#1 /home/voltaescrow/public_html/index.php(3): include('/home/voltaescr...')
+#2 {main}
+  thrown in /home/voltaescrow/public_html/login-action.php on line 64
+[10-Jun-2024 03:35:51 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_close(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/voltaescrow/public_html/login-action.php:64
+Stack trace:
+#0 /home/voltaescrow/public_html/login-action.php(64): mysqli_close(true)
+#1 /home/voltaescrow/public_html/index.php(3): include('/home/voltaescr...')
+#2 {main}
+  thrown in /home/voltaescrow/public_html/login-action.php on line 64
+[10-Jun-2024 03:38:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_close() in /home/voltaescrow/public_html/login-action.php:64
+Stack trace:
+#0 /home/voltaescrow/public_html/index.php(3): include()
+#1 {main}
+  thrown in /home/voltaescrow/public_html/login-action.php on line 64
