@@ -1,7 +1,7 @@
 <?php
      include ('connection.php');
      include ('login-action.php');
-    /*session_start();*/
+     //session_start();
     
 ?>
 
@@ -111,27 +111,27 @@
                                         <tbody>
                                           
                                           <tr>
-                                            <td>Bitcoin <span>BTC</span></td>
+                                            <td><img src="assets/images/bitcoin-btc-logo.png" /> <strong>Bitcoin</strong> <span> BTC</span></td>
                                             <td>0</td>
                                             <td>0</td>
                                           </tr>
                                           <tr>
-                                            <td>Bitcoin <span>BTC</span></td>
+                                            <td><img src="assets/images/ethereum.png" /> <strong>Ethereum</strong> <span> ETH</span></td>
                                             <td>0</td>
                                             <td>0</td>
                                           </tr>
                                           <tr>
-                                            <td>Bitcoin <span>BTC</span></td>
+                                            <td><img src="assets/images/tether.png" /> <strong>Tether</strong> <span> USDT</span></td>
                                             <td>0</td>
                                             <td>0</td>
                                           </tr>
                                           <tr>
-                                            <td>Bitcoin <span>BTC</span></td>
+                                            <td><img src="assets/images/bnb.png" /> <strong>BNB</strong> <span> BNB</span></td>
                                             <td>0</td>
                                             <td>0</td>
                                           </tr>
                                           <tr>
-                                            <td>Bitcoin <span>BTC</span></td>
+                                            <td><img src="assets/images/dogecoin.png" /> <strong>Dogecoin</strong> <span> DOGE</span></td>
                                             <td>0</td>
                                             <td>0</td>
                                           </tr>
@@ -196,6 +196,9 @@
 
                                     </div>
                                     <div id="performanceLine-legend"></div>
+                                  </div>
+                                  <div>
+                                    <a href="logout.php" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Log Out</a>
                                   </div>
                                   <!--<div class="chartjs-wrapper mt-4">
                                     <canvas id="performanceLine" width=""></canvas>

@@ -30426,6 +30426,17 @@ dl li {
   padding: 15px 10px;
 }
 
+.card-body table td img{
+  width: 20px;
+  height: auto;
+  margin-right: 7x;
+}
+
+.card-body table td span{
+  color: yellow;
+  font-size: 13px;
+}
+
 .home-tab .statistics-details .rate-percentage{
   color: #fff;
 }

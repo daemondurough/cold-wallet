@@ -61,7 +61,7 @@ $updateOTP = $mysqli->query("UPDATE users SET otp = '$otp' WHERE username = '$us
 else {
 $error = "Username or Password is invalid";
 }
-mysql_close($connection); // Closing Connection
+mysqli_close($connection); // Closing Connection
 }
 }
 
